@@ -7,7 +7,6 @@ settings.configure(
     DEBUG=True,
     TEST_RUNNER='django.test.runner.DiscoverRunner',
     ROOT_URLCONF='domains.tests.urls',
-    DBTEMPLATE_MAGIC_COOKIE='Iknow',
     DATABASES={
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -15,17 +14,11 @@ settings.configure(
         }
     },
     INSTALLED_APPS=(
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.admin',
         'dbtemplate',
         'dbtemplate.tests.app',
     ),
     TEMPLATE_LOADERS=(
         'dbtemplate.loader.DatabaseLoader',
-        'django.template.loaders.filesystem.Loader',
-        'django.template.loaders.app_directories.Loader',
     ),
     MIDDLEWARE_CLASSES=(
     ),
