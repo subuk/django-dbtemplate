@@ -6,6 +6,8 @@ django-dbtemplate
     :target: https://travis-ci.org/subuk/django-dbtemplate
     :alt: build status
 
+.. image:: https://badge.fury.io/py/django-dbtemplate.svg
+    :target: http://badge.fury.io/py/django-dbtemplate
 
 With django-dbtemplate your users may override templates from admin interface.
 Main purpose of this project - allow admin users to override email templates.
