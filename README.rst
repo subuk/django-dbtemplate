@@ -30,4 +30,7 @@ Installation
             ...
         )
 
+3. Add loader "dbtemplate.loader.DatabaseLoader" to TEMPLATE_LOADERS.
+
+
 For production deployments, always use `cached template loader <https://docs.djangoproject.com/en/1.8/ref/templates/api/#django.template.loaders.cached.Loader>`_ to awoid unnecessary database queries.
