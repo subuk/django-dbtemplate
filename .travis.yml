@@ -1,5 +1,7 @@
 language: python
 install:
+  - pip install flake8
   - pip install tox
 script:
+  - flake8 dbtemplate
   - tox
