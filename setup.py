@@ -21,10 +21,17 @@ def long_description():
 
 setup(
     name='django-dbtemplate',
+    author='Matvey Kruglov',
+    author_email='kubuzzzz@gmail.com',
+    url='https://github.com/subuk/django-dbtemplate',
     version='0.1',
     description='Allow to override templates from admin interface',
     long_description=long_description(),
-    packages=find_packages(exclude=['dbtemplate.tests.app']),
+    packages=find_packages(exclude=[
+        'tests',
+        'dbtemplate.tests',
+        'dbtemplate.tests.*',
+    ]),
     include_package_data=True,
     install_requires=requires,
     extras_require={
