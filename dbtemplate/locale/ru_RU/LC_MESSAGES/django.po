@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-07 16:01+0300\n"
+"POT-Creation-Date: 2015-06-07 18:35+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,23 +43,27 @@ msgstr "Ошибка рендеринга шаблона: %s"
 msgid "description"
 msgstr "описание"
 
-#: models.py:12
+#: apps.py:7
+msgid "Templates"
+msgstr "Шаблоны"
+
+#: models.py:17
 msgid "slug"
 msgstr "код"
 
-#: models.py:13
+#: models.py:18
 msgid "content"
 msgstr "содержимое"
 
-#: models.py:14
+#: models.py:19
 msgid "specification"
 msgstr "спецификация"
 
-#: models.py:17
+#: models.py:22
 msgid "template"
 msgstr "шаблон"
 
-#: models.py:18
+#: models.py:23
 msgid "templates"
 msgstr "шаблоны"
 
