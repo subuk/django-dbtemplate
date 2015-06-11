@@ -92,6 +92,11 @@ class TemplateAdmin(admin.ModelAdmin):
 
     def try_render(self, request, pk):
         dbtemplate = get_object_or_404(Template, pk=pk)
+        if request.method in ("POST", "PUT"):
+            data = request.POST["data"]
+            dbtemplate.data = data
+            if 'specs' in request.POST:
+                dbtemplate.specs = request.POST['specs']
 
         try:
             result = try_render_template(dbtemplate.data, dbtemplate.specs)
