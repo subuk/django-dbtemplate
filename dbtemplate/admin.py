@@ -107,6 +107,9 @@ class TemplateAdmin(admin.ModelAdmin):
             content_type = "text/html"
             status_code = 500
 
+        if content_type in ("text/html", "text/plain"):
+            content_type += "; charset=utf8"
+
         return HttpResponse(
             result,
             content_type=content_type,
