@@ -24,7 +24,7 @@ setup(
     author='Matvey Kruglov',
     author_email='kubuzzzz@gmail.com',
     url='https://github.com/subuk/django-dbtemplate',
-    version='0.3',
+    version='0.4',
     description='Allow to override templates from admin interface',
     long_description=long_description(),
     packages=find_packages(exclude=[
