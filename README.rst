@@ -22,13 +22,14 @@ Installation
 
         pip install django-dbtemplate
 
-2. Add "dbtempalte" to INSTALLED_APPS
+2. Add "dbtempalte" and "django.contrib.admindocs" to INSTALLED_APPS
 
     .. code:: python
 
         INSTALLED_APPS = (
             ...
             'dbtemplate',
+            'django.contrib.admindocs',
             ...
         )
 
